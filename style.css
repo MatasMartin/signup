@@ -1,16 +1,19 @@
 * {
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    
 }
 
-
+body {
+    overflow: hidden;
+}
 
 input, label {
     display:block;
 }
 
 .grid {
+    overflow: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     
@@ -48,7 +51,7 @@ svg {filter: invert(1)}
 
 .right {
     display: grid;
-    grid-template-rows: 1.3fr 1fr 1.2fr;
+    grid-template-rows: 1.3fr 1fr 1.1fr;
 }
 
 .top {
