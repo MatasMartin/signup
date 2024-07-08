@@ -1,7 +1,13 @@
 * {
     margin: 0;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+input, label {
+    display:block;
 }
 
 .grid {
@@ -17,27 +23,32 @@
 
 .text-box {
     position: absolute;
-    top: 40vh;
+    top: 38.8vh;
     background-color: black;
     opacity: 0.6;
     color: white;
     z-index: 1;
-    width: 64.2vh;
+    width: 67.9vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    font-family: Impact, sans-serif;
     font-size: min(3vw, 2.5rem);
     height: 15vh;
+    
+}
+
+.text-box h1 {
+    font-family: Impact, sans-serif;
+    
 }
 
 svg {filter: invert(1)}
 
 .right {
     display: grid;
-    grid-template-rows: 1.1fr 1fr 1.1fr;
+    grid-template-rows: 1.3fr 1fr 1.2fr;
 }
 
 .top {
@@ -50,10 +61,108 @@ svg {filter: invert(1)}
     flex-wrap: wrap;
 }
 
+.not-real {
+    margin-top: 10vh;
+}
+
 .middle {
     background-color: white;
+    margin: 3vh 8vh;
+    
+    
+}
+
+.middle-section {
+    box-shadow: 0px 10px 20px -19px black;
+    z-index: 10;
+}
+
+.signup {
+    margin-left: -1vh;
+    margin-top: 2vh;
+    
+}
+
+fieldset {
+
+    height: 100%;
+    background-color: transparent;
+    border: 0px none;
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 5vh;
+    
+
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: rgb(68, 68, 68);
+}
+
+.middle input {
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0.5vh 1vh;
+    padding-right: 5vh;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+      
+}
+
+.middle input:focus {
+    border: 1px solid rgb(0, 126, 181);
+    box-shadow: 1px 1px 3px -1px black;
+    outline: 0;
+}
+
+.middle input:invalid {
+    border: 1px solid rgb(181, 0, 0);
 }
 
 .bottom {
     background-color: rgb(240, 240, 240);
+    display: flex;
+    padding: 4vh 8vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.bottom input {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 1.5vh 5vh;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px 0px black;
+
+}
+
+.bottom input:hover {
+    background-color: rgb(154, 0, 0);
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vh;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.login a {
+    color: rgb(170, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login a:hover {
+    background-color: rgb(154, 0, 0);
 }
