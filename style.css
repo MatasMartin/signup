@@ -59,6 +59,7 @@ svg {filter: invert(1)}
     display: flex;
     font-size: 2rem;
     align-items: center;
+    
     padding: 1rem 5rem;
     font-weight: 550;
     flex-wrap: wrap;
@@ -66,6 +67,7 @@ svg {filter: invert(1)}
 
 .not-real {
     margin-top: 10vh;
+    margin-right: 25vh;
 }
 
 .middle {
